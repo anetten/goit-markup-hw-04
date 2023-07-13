@@ -101,6 +101,12 @@ body {
   color: #404bbf;
 }
 
+.studio {
+  color: #404bbf;
+  border-bottom: 4px solid #404bbf;
+  border-radius: 2px;
+}
+
 .address {
   font-style: normal;
   margin-left: auto;
@@ -156,6 +162,12 @@ button:focus {
 
 .efective-sol {
   background-color: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-size: cover;
   padding: 188px 0;
 }
 
@@ -184,6 +196,17 @@ button:focus {
   margin: 0 auto;
   min-width: 169px;
   margin-top: 48px;
+}
+
+.advantages-block {
+  background-color: #f4f4fd;
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .advantages-list {
@@ -257,6 +280,7 @@ button:focus {
 .team {
   border-radius: 0px 0px 4px 4px;
   width: calc((100% - 74px) / 4);
+  box-shadow: 0 2px 1px 0 #2e2f4214;
 }
 
 .name {
