@@ -275,6 +275,7 @@ button:focus {
 .our-team {
   background-color: #f4f4fd;
   padding: 120px 0;
+  height: 780px;
 }
 
 .team {
@@ -314,6 +315,7 @@ button:focus {
 .team-list {
   display: flex;
   gap: 24px;
+  height: 428px;
 }
 
 .paragraph-img {
