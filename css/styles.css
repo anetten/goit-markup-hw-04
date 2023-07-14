@@ -48,6 +48,8 @@ body {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-logo {
@@ -103,7 +105,17 @@ body {
 
 .studio {
   color: #404bbf;
-  border-bottom: 4px solid #404bbf;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.studio::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
   border-radius: 2px;
 }
 
@@ -130,6 +142,7 @@ body {
   font-style: normal;
   text-transform: lowercase;
   color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-menu-link:hover,
@@ -161,13 +174,16 @@ button:focus {
 }
 
 .efective-sol {
+  width: 1440px;
   background-color: #2e2f42;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office.jpg);
-  background-size: cover;
   padding: 188px 0;
 }
 
@@ -196,6 +212,8 @@ button:focus {
   margin: 0 auto;
   min-width: 169px;
   margin-top: 48px;
+  button: data-modal-open;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .advantages-block {
