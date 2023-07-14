@@ -174,7 +174,7 @@ button:focus {
 }
 
 .efective-sol {
-  width: 1440px;
+  max-width: 1440px;
   background-color: #2e2f42;
   background-repeat: no-repeat;
   background-position: center;
@@ -299,12 +299,44 @@ button:focus {
 .team {
   border-radius: 0px 0px 4px 4px;
   width: calc((100% - 74px) / 4);
-  box-shadow: 0 2px 1px 0 #2e2f4214;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .name {
   padding: 32px 16px;
   background-color: #ffffff;
+  padding: 32px 0;
+}
+
+.team-socials {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.team-socials-item {
+  width: 40px;
+  height: 40px;
+}
+
+.team-socials-link {
+  width: 100%;
+  height: 100%;
+  color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-socials-link:hover,
+.team-socials-link:focus {
+  background-color: #404bbf;
+}
+
+.team-icon {
+  fill: #f4f4fd;
 }
 
 .wawd-section {
