@@ -119,6 +119,22 @@ body {
   border-radius: 2px;
 }
 
+.portfolio {
+  color: #404bbf;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+}
+
 .address {
   font-style: normal;
   margin-left: auto;
@@ -457,7 +473,7 @@ footer {
 }
 
 .footer-paragraph-socials {
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -483,6 +499,7 @@ footer {
   height: 100%;
   border-radius: 50%;
   background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-socials-link:hover,
@@ -524,11 +541,17 @@ footer {
   background-color: #f4f4fd;
   padding: 12px 24px;
   border: 1px solid #e7e9fc;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-list:hover,
 .button-list:focus {
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button-order:hover,
@@ -538,6 +561,31 @@ footer {
 
 .img-list-item {
   width: calc((100% - 48px) / 3);
+  position: relative;
+}
+
+.img-cover-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: #f4f4fd;
+  background-color: #4d5ae5;
+  height: 100%;
+}
+
+.img-link {
+  display: block;
+}
+
+.img-link:hover,
+.img-link:focus {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .description {
