@@ -555,6 +555,10 @@ footer {
   transform: translateY(0%);
 }
 
+.img-list-item:focus .portfolio-cover-text {
+  transform: translateY(0%);
+}
+
 .portfolio-cover {
   position: relative;
   overflow: hidden;
